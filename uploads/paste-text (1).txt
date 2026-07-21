@@ -1,0 +1,131 @@
+Refine the entire website to create a truly premium, luxury experience.
+
+Do not change the structure or content hierarchy. Instead, improve the visual design, spacing, typography and user experience throughout.
+
+The website should feel closer to a luxury wellness clinic, boutique private coaching brand or high-end healthcare practice than a fitness website.
+
+GENERAL DESIGN
+
+• Increase white space throughout the website.
+• Create a more spacious, elegant and sophisticated layout.
+• Improve the visual hierarchy using typography rather than decorative elements.
+• Use generous margins and consistent vertical spacing between sections.
+• Create a calm, luxurious browsing experience.
+
+TYPOGRAPHY
+
+• Use elegant, modern typography.
+• Increase the size of section headings.
+• Improve line spacing and readability.
+• Use lighter font weights where appropriate.
+• Ensure headings feel refined and editorial.
+
+COLOUR PALETTE
+
+Keep the palette soft and timeless.
+
+Primary colours:
+• White
+• Warm off-white
+• Soft beige
+• Charcoal
+• Subtle black
+
+Use gold only as a very subtle accent.
+
+Avoid bright colours or anything that feels commercial.
+
+HERO SECTION
+
+Create a stronger first impression.
+
+• Make the hero section full screen.
+• Increase the size of my professional photograph.
+• Give the image more breathing room.
+• Keep the text aligned elegantly beside the portrait.
+• Add a subtle fade-in animation when the page loads.
+• Make the CTA button elegant rather than bold or flashy.
+
+SECTIONS
+
+Increase spacing between every section.
+
+Each section should feel like an individual chapter with room to breathe.
+
+Avoid crowded layouts.
+
+CARDS
+
+Refine every card throughout the website.
+
+• Softer shadows
+• Rounded corners
+• More padding
+• Elegant hover animations
+• Smooth transitions
+• Premium appearance
+
+SERVICES
+
+Avoid making all service cards feel identical.
+
+Introduce subtle visual variation while keeping the design consistent.
+
+The section should resemble an editorial luxury website rather than a standard grid.
+
+MEET SABINA
+
+Transform this section into a premium personal profile.
+
+Create a balanced layout that highlights:
+
+• My portrait
+• My experience
+• My qualifications
+• Statistics
+• My personal philosophy
+
+The section should establish trust and authority immediately.
+
+CLIENT EXPERIENCE
+
+Present testimonials in a more premium way.
+
+Use elegant cards or a smooth carousel.
+
+Highlight five-star reviews beautifully.
+
+Make social proof feel authentic and luxurious.
+
+LOCATION
+
+Give the map more space.
+
+Clearly communicate that I provide private sessions in clients' homes and luxury villas across Costa Blanca South.
+
+ANIMATIONS
+
+Use subtle premium animations only.
+
+Examples:
+
+• Fade in
+• Gentle slide up
+• Smooth hover effects
+• Elegant button transitions
+
+Animations should enhance the experience without becoming distracting.
+
+MOBILE EXPERIENCE
+
+Ensure the website feels just as luxurious on mobile.
+
+Maintain generous spacing.
+
+Avoid cramped layouts.
+
+FINAL GOAL
+
+The finished website should look like it was designed by a premium web design agency for an exclusive private movement specialist.
+
+Every design decision should communicate professionalism, trust, expertise, calmness and luxury.
