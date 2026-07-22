@@ -17,15 +17,7 @@ const HeroSection = () => {
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-8 lg:px-16 w-full">
           <div className="max-w-xl space-y-10">
-            {/* Logo */}
-            <div className="animate-fade-in">
-              <img
-                src="/assets/logo.png"
-                alt="Function Better"
-                className="h-11 md:h-13 w-auto brightness-0 invert opacity-90"
-              />
-            </div>
-
+            
             {/* Headline */}
             <div className="animate-fade-in-up animate-delay-200">
               <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-white leading-[1.05] tracking-tight">
