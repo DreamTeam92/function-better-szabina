@@ -7,7 +7,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 60);
+      setIsScrolled(window.scrollY > 80);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -25,7 +25,7 @@ const Navigation = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-out ${
         isScrolled
-          ? 'bg-background/97 backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border))] py-4'
+          ? 'bg-background/98 backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border)/0.5)] py-4'
           : 'bg-transparent py-6 lg:py-8'
       }`}
     >
@@ -34,17 +34,23 @@ const Navigation = () => {
           <img
             src="/assets/logo.png"
             alt="Function Better"
-            className="h-9 md:h-11 w-auto"
+            className={`h-9 md:h-10 w-auto transition-all duration-700 ${
+              isScrolled ? '' : 'brightness-0 invert'
+            }`}
           />
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-11">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="font-body text-[11px] font-medium tracking-[0.15em] uppercase text-foreground/60 hover:text-foreground transition-colors duration-500"
+              className={`font-body text-[10px] font-medium tracking-[0.18em] uppercase transition-colors duration-500 ${
+                isScrolled
+                  ? 'text-foreground/55 hover:text-foreground'
+                  : 'text-white/70 hover:text-white'
+              }`}
             >
               {link.label}
             </a>
@@ -54,7 +60,9 @@ const Navigation = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2 text-foreground/70"
+          className={`md:hidden p-2 transition-colors duration-500 ${
+            isScrolled ? 'text-foreground/70' : 'text-white/80'
+          }`}
           aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? <X size={22} strokeWidth={1.5} /> : <Menu size={22} strokeWidth={1.5} />}
@@ -64,7 +72,7 @@ const Navigation = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-background/99 backdrop-blur-xl border-b border-border/50 animate-fade-in">
-          <div className="px-8 py-10 flex flex-col gap-7">
+          <div className="px-8 py-12 flex flex-col gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}

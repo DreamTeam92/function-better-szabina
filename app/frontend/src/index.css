@@ -36,8 +36,8 @@
 
     --radius: 0.75rem;
 
-    --gold: 38 55% 50%;
-    --gold-light: 38 40% 70%;
+    --gold: 38 45% 52%;
+    --gold-light: 38 35% 68%;
     --warm-beige: 38 22% 96%;
     --cream: 40 30% 98%;
 
@@ -60,14 +60,14 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     letter-spacing: 0.015em;
-    line-height: 1.8;
+    line-height: 1.85;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
     letter-spacing: -0.02em;
-    line-height: 1.2;
+    line-height: 1.15;
   }
 }
 
@@ -101,12 +101,12 @@
   }
 
   .animate-fade-in-up {
-    animation: fade-in-up 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: fade-in-up 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     opacity: 0;
   }
 
   .animate-fade-in {
-    animation: fade-in 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: fade-in 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     opacity: 0;
   }
 
@@ -133,12 +133,20 @@
   .animate-delay-600 {
     animation-delay: 0.6s;
   }
+
+  .animate-delay-700 {
+    animation-delay: 0.7s;
+  }
+
+  .animate-delay-800 {
+    animation-delay: 0.8s;
+  }
 }
 
 @keyframes fade-in-up {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(24px);
   }
   100% {
     opacity: 1;
@@ -155,18 +163,29 @@
   }
 }
 
+@keyframes gentle-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.2);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 6px 28px rgba(37, 211, 102, 0.3);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 ::selection {
-  background-color: hsl(38 50% 55% / 0.15);
+  background-color: hsl(38 45% 52% / 0.12);
   color: hsl(30 12% 10%);
 }
 
 /* Smooth scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {

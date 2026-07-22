@@ -25,51 +25,57 @@ const steps = [
 
 const ExperienceSection = () => {
   return (
-    <section className="py-32 md:py-44 bg-warm-beige">
+    <section className="py-40 md:py-56">
       <div className="max-w-6xl mx-auto px-8 lg:px-16">
-        <div className="text-center max-w-3xl mx-auto mb-20 md:mb-28">
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-foreground mb-8 font-light">
+        <div className="text-center max-w-3xl mx-auto mb-24 md:mb-32">
+          <p className="font-body text-[10px] tracking-[0.3em] uppercase text-gold/70 font-medium mb-8">
+            Your Journey
+          </p>
+          <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl text-foreground mb-10 font-light">
             The Function Better Experience
           </h2>
-          <p className="font-heading text-xl md:text-2xl text-foreground/70 italic mb-8 font-light leading-relaxed">
+          <p className="font-heading text-xl md:text-2xl text-foreground/60 italic mb-10 font-light leading-relaxed">
             A personalised approach to movement, strength and recovery.
           </p>
-          <p className="font-body text-[15px] text-muted-foreground leading-[2] font-light max-w-2xl mx-auto">
+          <p className="font-body text-[14px] text-muted-foreground leading-[2.1] font-light max-w-2xl mx-auto">
             Every session is thoughtfully designed around your body, your goals
             and the way you move. Whether you're looking to build strength,
             recover from injury, improve posture or simply move with greater
             confidence, every programme is completely tailored to you.
           </p>
-          <div className="mt-8 space-y-2">
-            <p className="font-body text-[13px] text-foreground/50 tracking-wide font-light italic">
-              No generic workouts.
-            </p>
-            <p className="font-body text-[13px] text-foreground/50 tracking-wide font-light italic">
-              No one-size-fits-all approach.
+          <div className="mt-10 space-y-2">
+            <p className="font-body text-[12px] text-foreground/40 tracking-wide font-light italic">
+              No generic workouts. No one-size-fits-all approach.
             </p>
           </div>
         </div>
 
-        {/* Process Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-          {steps.map((step, index) => (
-            <div key={step.title} className="text-center group">
-              <div className="relative mb-8">
-                <div className="w-20 h-20 mx-auto rounded-full bg-background/80 flex items-center justify-center border border-border/50 group-hover:border-gold/30 group-hover:shadow-sm transition-all duration-500">
-                  <step.icon className="w-8 h-8 text-gold/80" strokeWidth={1.2} />
+        {/* Horizontal Timeline */}
+        <div className="relative">
+          {/* Connecting line */}
+          <div className="hidden lg:block absolute top-[52px] left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-10">
+            {steps.map((step, index) => (
+              <div key={step.title} className="text-center group relative">
+                <div className="relative mb-10">
+                  <div className="w-[104px] h-[104px] mx-auto rounded-full bg-warm-beige flex items-center justify-center border border-border/40 group-hover:border-gold/20 group-hover:shadow-[0_8px_32px_-8px_rgba(0,0,0,0.04)] transition-all duration-700 relative z-10">
+                    <step.icon className="w-9 h-9 text-gold/70" strokeWidth={1} />
+                  </div>
+                  {/* Step number */}
+                  <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-background border border-border/60 flex items-center justify-center font-body text-[9px] font-medium text-foreground/40 z-20">
+                    {index + 1}
+                  </span>
                 </div>
-                {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 left-[calc(50%+48px)] w-[calc(100%-96px)] h-px bg-border/60" />
-                )}
+                <h3 className="font-heading text-3xl text-foreground mb-4 font-light">
+                  {step.title}
+                </h3>
+                <p className="font-body text-[13px] text-muted-foreground leading-[2] max-w-[240px] mx-auto font-light">
+                  {step.description}
+                </p>
               </div>
-              <h3 className="font-heading text-2xl text-foreground mb-3 font-light">
-                {step.title}
-              </h3>
-              <p className="font-body text-[13px] text-muted-foreground leading-[1.9] max-w-[220px] mx-auto font-light">
-                {step.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Instagram, MessageCircle, Mail } from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -21,24 +22,56 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-32 md:py-44">
+    <section id="contact" className="py-40 md:py-56">
       <div className="max-w-5xl mx-auto px-8 lg:px-16">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 font-light">
+          <div className="text-center mb-20">
+            <p className="font-body text-[10px] tracking-[0.3em] uppercase text-gold/70 font-medium mb-8">
+              Get In Touch
+            </p>
+            <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl text-foreground mb-8 font-light">
               Book Your Consultation
             </h2>
-            <p className="font-body text-[15px] text-muted-foreground font-light leading-[1.9]">
+            <p className="font-body text-[14px] text-muted-foreground font-light leading-[2]">
               Take the first step towards moving better and feeling stronger.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="space-y-3">
+          {/* Contact links */}
+          <div className="flex justify-center gap-6 mb-16">
+            <a
+              href="https://wa.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full border border-border/50 flex items-center justify-center hover:border-gold/30 hover:bg-gold/4 transition-all duration-500"
+              aria-label="WhatsApp"
+            >
+              <MessageCircle className="w-5 h-5 text-foreground/40" strokeWidth={1.2} />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full border border-border/50 flex items-center justify-center hover:border-gold/30 hover:bg-gold/4 transition-all duration-500"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-5 h-5 text-foreground/40" strokeWidth={1.2} />
+            </a>
+            <a
+              href="mailto:hello@functionbetter.com"
+              className="w-12 h-12 rounded-full border border-border/50 flex items-center justify-center hover:border-gold/30 hover:bg-gold/4 transition-all duration-500"
+              aria-label="Email"
+            >
+              <Mail className="w-5 h-5 text-foreground/40" strokeWidth={1.2} />
+            </a>
+          </div>
+
+          <form onSubmit={handleSubmit} className="space-y-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+              <div className="space-y-4">
                 <label
                   htmlFor="name"
-                  className="font-body text-[10px] font-medium tracking-[0.2em] uppercase text-foreground/50"
+                  className="font-body text-[10px] font-medium tracking-[0.25em] uppercase text-foreground/45"
                 >
                   Name
                 </label>
@@ -49,14 +82,14 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-0 py-4 bg-transparent border-0 border-b border-border font-body text-[14px] text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-gold/50 transition-colors duration-500 font-light"
+                  className="w-full px-0 py-5 bg-transparent border-0 border-b border-border/80 font-body text-[14px] text-foreground placeholder:text-muted-foreground/35 focus:outline-none focus:border-gold/40 transition-colors duration-500 font-light"
                   placeholder="Your name"
                 />
               </div>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <label
                   htmlFor="email"
-                  className="font-body text-[10px] font-medium tracking-[0.2em] uppercase text-foreground/50"
+                  className="font-body text-[10px] font-medium tracking-[0.25em] uppercase text-foreground/45"
                 >
                   Email
                 </label>
@@ -67,17 +100,17 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-0 py-4 bg-transparent border-0 border-b border-border font-body text-[14px] text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-gold/50 transition-colors duration-500 font-light"
+                  className="w-full px-0 py-5 bg-transparent border-0 border-b border-border/80 font-body text-[14px] text-foreground placeholder:text-muted-foreground/35 focus:outline-none focus:border-gold/40 transition-colors duration-500 font-light"
                   placeholder="your@email.com"
                 />
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+              <div className="space-y-4">
                 <label
                   htmlFor="goals"
-                  className="font-body text-[10px] font-medium tracking-[0.2em] uppercase text-foreground/50"
+                  className="font-body text-[10px] font-medium tracking-[0.25em] uppercase text-foreground/45"
                 >
                   Goals
                 </label>
@@ -86,7 +119,7 @@ const ContactSection = () => {
                   name="goals"
                   value={formData.goals}
                   onChange={handleChange}
-                  className="w-full px-0 py-4 bg-transparent border-0 border-b border-border font-body text-[14px] text-foreground focus:outline-none focus:border-gold/50 transition-colors duration-500 font-light"
+                  className="w-full px-0 py-5 bg-transparent border-0 border-b border-border/80 font-body text-[14px] text-foreground focus:outline-none focus:border-gold/40 transition-colors duration-500 font-light"
                 >
                   <option value="">Select your primary goal</option>
                   <option value="strength">Build Strength</option>
@@ -97,10 +130,10 @@ const ContactSection = () => {
                   <option value="general">General Wellbeing</option>
                 </select>
               </div>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <label
                   htmlFor="location"
-                  className="font-body text-[10px] font-medium tracking-[0.2em] uppercase text-foreground/50"
+                  className="font-body text-[10px] font-medium tracking-[0.25em] uppercase text-foreground/45"
                 >
                   Preferred Location
                 </label>
@@ -109,7 +142,7 @@ const ContactSection = () => {
                   name="location"
                   value={formData.location}
                   onChange={handleChange}
-                  className="w-full px-0 py-4 bg-transparent border-0 border-b border-border font-body text-[14px] text-foreground focus:outline-none focus:border-gold/50 transition-colors duration-500 font-light"
+                  className="w-full px-0 py-5 bg-transparent border-0 border-b border-border/80 font-body text-[14px] text-foreground focus:outline-none focus:border-gold/40 transition-colors duration-500 font-light"
                 >
                   <option value="">Select your area</option>
                   <option value="las-colinas">Las Colinas</option>
@@ -124,10 +157,10 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-4">
               <label
                 htmlFor="message"
-                className="font-body text-[10px] font-medium tracking-[0.2em] uppercase text-foreground/50"
+                className="font-body text-[10px] font-medium tracking-[0.25em] uppercase text-foreground/45"
               >
                 Message
               </label>
@@ -137,15 +170,15 @@ const ContactSection = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows={5}
-                className="w-full px-0 py-4 bg-transparent border-0 border-b border-border font-body text-[14px] text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-gold/50 transition-colors duration-500 resize-none font-light"
+                className="w-full px-0 py-5 bg-transparent border-0 border-b border-border/80 font-body text-[14px] text-foreground placeholder:text-muted-foreground/35 focus:outline-none focus:border-gold/40 transition-colors duration-500 resize-none font-light"
                 placeholder="Tell me a little about yourself and what you'd like to achieve..."
               />
             </div>
 
-            <div className="pt-8 text-center">
+            <div className="pt-10 text-center">
               <button
                 type="submit"
-                className="px-14 py-5 bg-foreground text-primary-foreground font-body text-[11px] font-medium tracking-[0.2em] uppercase rounded-full hover:bg-foreground/85 transition-all duration-500 ease-out"
+                className="px-14 py-5 bg-foreground text-primary-foreground font-body text-[10px] font-medium tracking-[0.2em] uppercase rounded-full hover:bg-foreground/85 transition-all duration-500 ease-out"
               >
                 Book Consultation
               </button>
