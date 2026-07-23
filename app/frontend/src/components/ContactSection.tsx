@@ -16,17 +16,42 @@ const ContactSection = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Thank you for your enquiry. I will be in touch soon.');
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert("Thank you for your enquiry. I will be in touch very soon.");
+
+      setFormData({
+        name: "",
+        email: "",
+        goals: "",
+        location: "",
+        message: "",
+      });
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    alert("Unable to send your enquiry. Please try again.");
+  }
+};
 
   return (
     <section id="contact" className="py-40 md:py-56">
       <div className="max-w-5xl mx-auto px-8 lg:px-16">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-20">
-            <p className="font-body text-[10px] tracking-[0.3em] uppercase text-gold/70 font-medium mb-8">
+            <p className="font-body text-[11px] tracking-[0.3em] uppercase text-gold/70 font-medium mb-8">
               Get In Touch
             </p>
             <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl text-foreground mb-8 font-light">
@@ -40,7 +65,7 @@ const ContactSection = () => {
           {/* Contact links */}
           <div className="flex justify-center gap-6 mb-16">
             <a
-              href="https://wa.me/"
+              href="https://wa.me/34608089472"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border border-border/50 flex items-center justify-center hover:border-gold/30 hover:bg-gold/4 transition-all duration-500"
@@ -49,7 +74,7 @@ const ContactSection = () => {
               <MessageCircle className="w-5 h-5 text-foreground/40" strokeWidth={1.2} />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/functionbetter.fit/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border border-border/50 flex items-center justify-center hover:border-gold/30 hover:bg-gold/4 transition-all duration-500"
@@ -58,7 +83,7 @@ const ContactSection = () => {
               <Instagram className="w-5 h-5 text-foreground/40" strokeWidth={1.2} />
             </a>
             <a
-              href="mailto:hello@functionbetter.com"
+              href="mailto:hello@functionbetter.fit"
               className="w-12 h-12 rounded-full border border-border/50 flex items-center justify-center hover:border-gold/30 hover:bg-gold/4 transition-all duration-500"
               aria-label="Email"
             >

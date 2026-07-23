@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex justify-center gap-5 pt-4">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/rozingerszabina/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full border border-primary-foreground/10 flex items-center justify-center hover:border-gold-light/25 hover:text-gold-light transition-all duration-500"
@@ -35,7 +35,7 @@ const Footer = () => {
               <Facebook className="w-4 h-4" strokeWidth={1.2} />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/functionbetter.fit/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full border border-primary-foreground/10 flex items-center justify-center hover:border-gold-light/25 hover:text-gold-light transition-all duration-500"
@@ -44,7 +44,7 @@ const Footer = () => {
               <Instagram className="w-4 h-4" strokeWidth={1.2} />
             </a>
             <a
-              href="mailto:hello@functionbetter.com"
+              href="mailto:hello@functionbetter.fit"
               className="w-11 h-11 rounded-full border border-primary-foreground/10 flex items-center justify-center hover:border-gold-light/25 hover:text-gold-light transition-all duration-500"
               aria-label="Email"
             >
