@@ -20,7 +20,7 @@ const HeroSection = () => {
             
             {/* Headline */}
             <div className="animate-fade-in-up animate-delay-200">
-              <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-white leading-[1.05] tracking-tight">
+              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-[1.08] tracking-tight">
                 Move Better.
                 <br />
                 Feel Better.
@@ -31,12 +31,11 @@ const HeroSection = () => {
 
             {/* Supporting paragraph */}
             <div className="animate-fade-in-up animate-delay-400">
-              <p className="font-body text-[14px] md:text-[15px] text-white/75 leading-[2] font-light max-w-md">
-                Bespoke movement, strength and recovery coaching designed around
-                your body, your goals and your lifestyle.
+              <p className="font-body text-[14px] md:text-[15px] text-white/90 leading-[2] font-light max-w-md">
+                Bespoke movement, strength and recovery sessions designed to help you move better, feel stronger and live pain free.
               </p>
-              <p className="font-body text-[12px] md:text-[13px] text-white/50 leading-[1.9] font-light mt-4">
-                Private one-to-one sessions in your home or villa across Costa Blanca South.
+              <p className="font-body text-[12px] md:text-[13px] text-white/90 leading-[1.9] font-light mt-4">
+                Delivered in the comfort of your home or private villa across Costa Blanca South.
               </p>
             </div>
 

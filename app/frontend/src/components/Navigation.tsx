@@ -34,7 +34,7 @@ const Navigation = () => {
           <img
             src="/assets/logo.png"
             alt="Function Better"
-            className={`h-9 md:h-10 w-auto transition-all duration-700 ${
+            className={`h-15 md:h-16 w-auto transition-all duration-700 ${
               isScrolled ? '' : 'brightness-0 invert'
             }`}
           />

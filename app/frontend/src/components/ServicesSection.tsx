@@ -51,7 +51,10 @@ const ServicesSection = () => {
             How I Can Help
           </h2>
           <p className="font-body text-[14px] text-muted-foreground leading-[2] font-light">
-            Each service is delivered privately and tailored entirely to you.
+            Tailored movement, strength and recovery services designed around your individual needs.
+          </p>
+          <p className="font-body text-[14px] text-muted-foreground leading-[2] font-light">
+            Whether your goal is to move without pain, build strength, recover from injury or simply feel your best, every session is personalised to help you achieve lasting results.
           </p>
         </div>
 

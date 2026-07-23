@@ -49,7 +49,7 @@ const MeetSabinaSection = () => {
           <div className="lg:col-span-5 lg:sticky lg:top-32">
             <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-[0_30px_80px_-20px_rgba(0,0,0,0.12)]">
               <img
-                src="/assets/hero.png"
+                src="/assets/szabina.png"
                 alt="Sabina - Movement Specialist"
                 className="w-full h-full object-cover object-top"
               />
