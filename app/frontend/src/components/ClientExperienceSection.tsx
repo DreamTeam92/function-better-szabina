@@ -2,21 +2,21 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah M.',
-    location: 'Las Colinas',
-    text: 'Working with Sabina has completely transformed how I move and feel. After years of back pain, I finally feel strong and confident again. Her attention to detail and personalised approach is unlike anything I have experienced before.',
+    name: 'Petra K.',
+    location: 'Las Colinas, ES',
+    text: 'We have our second home in Las Colinas, Orihuela Costa, and finding someone with truly high standards and real expertise is not always easy. Working with Sabina has honestly been one of the best investments we’ve made for our wellbeing. She is an exceptionally knowledgeable...',
     rating: 5,
   },
   {
-    name: 'James T.',
-    location: 'Campoamor',
-    text: 'Sabina is exceptional at what she does. Her knowledge of biomechanics and corrective exercise helped me recover from a knee injury that I thought would limit me forever. I cannot recommend her highly enough.',
+    name: 'Dan B.',
+    location: 'Chipping Norton, UK',
+    text: 'I had the pleasure of having Szabina teach at my personal training and Pilates studio in Chipping Norton, England, for one year, and she was a genuine joy to work with. She is not only a wonderful and highly knowledgeable teacher, but also a genuinely great person who brings warmth, professionalism...',
     rating: 5,
   },
   {
-    name: 'Maria L.',
-    location: 'La Zenia',
-    text: 'The private sessions at my villa are the highlight of my week. Sabina creates a calm, professional environment and every session feels purposeful. I have never felt stronger or more balanced.',
+    name: 'Alice W.',
+    location: 'Soho Farmhouse, UK',
+    text: 'Szabina is the best personal trainer ever! I had tried a few before, but have never experienced training that is so personalized and takes into account exactly what my body needs in order to achieve my goals. Her knowledge of anatomy and techniques is exceptional and her attention and focus is incredible...',
     rating: 5,
   },
 ];
@@ -26,7 +26,7 @@ const ClientExperienceSection = () => {
     <section id="client-experience" className="py-40 md:py-56">
       <div className="max-w-6xl mx-auto px-8 lg:px-16">
         <div className="text-center max-w-2xl mx-auto mb-24">
-          <p className="font-body text-[10px] tracking-[0.3em] uppercase text-gold/70 font-medium mb-8">
+          <p className="font-body text-[11px] tracking-[0.3em] uppercase text-gold/70 font-medium mb-8">
             Testimonials
           </p>
           <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl text-foreground mb-8 font-light">
@@ -81,7 +81,7 @@ const ClientExperienceSection = () => {
 
         <div className="text-center mt-20">
           <a
-            href="https://www.google.com/maps"
+            href="https://maps.app.goo.gl/1UytitqEeVeKxAzL7"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-10 py-4 border border-foreground/10 text-foreground/60 font-body text-[10px] font-medium tracking-[0.2em] uppercase rounded-full hover:border-foreground/20 hover:text-foreground transition-all duration-500"

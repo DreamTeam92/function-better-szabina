@@ -30,7 +30,7 @@ const PhilosophySection = () => {
         {/* Section Label */}
         <div className="text-center mb-16 md:mb-20 animate-fade-in-up">
           <p className="font-body text-[11px] tracking-[0.35em] uppercase text-gold font-medium mb-5">
-            Our Philosophy
+            Philosophy
           </p>
           <div className="w-10 h-[1.5px] bg-gold/60 mx-auto" />
         </div>

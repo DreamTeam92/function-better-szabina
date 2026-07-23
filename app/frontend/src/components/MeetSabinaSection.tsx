@@ -60,7 +60,7 @@ const MeetSabinaSection = () => {
           <div className="lg:col-span-7 space-y-14">
             <div className="space-y-6">
               <p className="font-body text-[10px] tracking-[0.3em] uppercase text-gold/70 font-medium">
-                Your Coach
+                Your Movement Specialist
               </p>
               <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl text-foreground font-light">
                 Meet Sabina
@@ -85,17 +85,40 @@ const MeetSabinaSection = () => {
             </div>
 
             {/* Bio */}
-            <div className="space-y-6">
-              <p className="font-body text-[14px] text-muted-foreground leading-[2.2] font-light">
-                With over two decades of experience, I combine biomechanics, corrective exercise, 
-                strength training and Pilates to help you move with confidence and live without limitation.
-              </p>
-              <p className="font-body text-[14px] text-muted-foreground leading-[2.2] font-light">
-                My approach is built on understanding how your body moves, identifying what needs attention, 
-                and creating a programme that evolves with you.
-              </p>
-            </div>
+<div className="space-y-6">
+  <p className="font-body text-[14px] text-muted-foreground leading-[2.2] font-light">
+    With over 23 years of experience in health, fitness and movement, I help
+    people build strength, improve movement and regain confidence in their
+    bodies.
+  </p>
 
+  <p className="font-body text-[14px] text-muted-foreground leading-[2.2] font-light">
+    My approach combines evidence-based training with a deep understanding of
+    human movement, allowing every session to be tailored to the individual
+    rather than following a generic programme.
+  </p>
+
+  <p className="font-body text-[14px] text-muted-foreground leading-[2.2] font-light">
+    Whether you're recovering from injury, improving performance or investing
+    in your long-term wellbeing, my goal is simple:
+    <br />
+    To help you move better, feel stronger and live with confidence.
+  </p>
+
+  {/* Signature Quote */}
+  <div className="my-12 border-l-2 border-gold/40 pl-8">
+    <p className="font-heading text-[20px] md:text-[26px] italic font-light text-foreground leading-[1.7]">
+      “I believe movement has the power to transform the way we live.
+      My role is not simply to guide you through exercise, but to help you
+      build lasting strength, confidence and a body that supports the life you
+      want to live.”
+    </p>
+
+    <p className="mt-6 font-body text-[10px] tracking-[0.35em] uppercase text-gold/70">
+      — Sabina
+    </p>
+  </div>
+</div>
             {/* Qualifications - Editorial style */}
             <div className="pt-6">
               <h3 className="font-body text-[10px] font-medium tracking-[0.3em] uppercase text-foreground/35 mb-8">
