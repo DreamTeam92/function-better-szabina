@@ -20,7 +20,7 @@ const ContactSection = () => {
   e.preventDefault();
 
   try {
-    const response = await fetch("/api/contact", {
+    const response = await fetch("https:/function-better-api.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
