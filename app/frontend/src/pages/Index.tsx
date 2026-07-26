@@ -6,7 +6,7 @@ import PhilosophySection from '@/components/PhilosophySection';
 import MeetSabinaSection from '@/components/MeetSabinaSection';
 import ClientExperienceSection from '@/components/ClientExperienceSection';
 import LocationSection from '@/components/LocationSection';
-import ContactSection from '@/components/ContactSection';
+import ContactSection from '@/components/ContactSectionPremium';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 

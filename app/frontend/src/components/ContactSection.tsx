@@ -16,20 +16,28 @@ const ContactSection = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const [isSending, setIsSending] = useState(false);
+const [isSuccess, setIsSuccess] = useState(false);
+
+const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
+  setIsSending(true);
+
   try {
-    const response = await fetch("https://function-better-api.onrender.com/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    const response = await fetch(
+      "https://function-better-api.onrender.com/api/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
 
     if (response.ok) {
-      alert("Thank you for your enquiry. I will be in touch very soon.");
+      setIsSuccess(true);
 
       setFormData({
         name: "",
@@ -43,9 +51,10 @@ const ContactSection = () => {
     }
   } catch (error) {
     alert("Unable to send your enquiry. Please try again.");
+  } finally {
+    setIsSending(false);
   }
 };
-
   return (
     <section id="contact" className="py-40 md:py-56">
       <div className="max-w-5xl mx-auto px-8 lg:px-16">
@@ -90,7 +99,46 @@ const ContactSection = () => {
               <Mail className="w-5 h-5 text-foreground/40" strokeWidth={1.2} />
             </a>
           </div>
+{isSuccess ? (
 
+<div className="text-center py-24 animate-fade-in">
+
+<div className="w-20 h-20 rounded-full border border-gold/40 mx-auto mb-8 flex items-center justify-center">
+
+<span className="text-4xl text-gold">✓</span>
+
+</div>
+
+<h3 className="font-heading text-4xl font-light mb-6">
+Thank You
+</h3>
+
+<p className="font-body text-muted-foreground leading-8 max-w-md mx-auto">
+
+Your consultation request has been received.
+
+<br /><br />
+
+Sabina will personally reply within <strong>24 hours.</strong>
+
+<br /><br />
+
+We look forward to helping you move better, feel stronger and live with confidence.
+
+</p>
+
+<button
+className="mt-14 px-12 py-4 rounded-full bg-foreground text-primary-foreground uppercase tracking-[0.2em] text-[10px]"
+onClick={() => setIsSuccess(false)}
+>
+
+Send Another Enquiry
+
+</button>
+
+</div>
+
+) : (
           <form onSubmit={handleSubmit} className="space-y-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
               <div className="space-y-4">
@@ -209,6 +257,7 @@ const ContactSection = () => {
               </button>
             </div>
           </form>
+)}
         </div>
       </div>
     </section>
