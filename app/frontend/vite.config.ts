@@ -51,10 +51,10 @@ export default defineConfig(({ command }) => {
       atoms(),
       ensureBuildOutDir(),
       Sitemap({
-        hostname: 'https://atoms.template.com',
+        hostname: 'https://functionbetter.fit',
         lastmod: getSitemapLastmod(),
         readable: true,
-        generateRobotsTxt: true,
+        generateRobotsTxt: false,
       }),
       ...(blogPrerenderRoutes.length > 0
         ? vitePrerenderPlugin({

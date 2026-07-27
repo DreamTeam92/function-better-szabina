@@ -34,9 +34,11 @@ const Navigation = () => {
           <img
             src="/assets/logo.png"
             alt="Function Better"
-            className={`h-15 md:h-16 w-auto transition-all duration-700 ${
-              isScrolled ? '' : 'brightness-0 invert'
-            }`}
+            className={`w-auto transition-all duration-700 ${
+  isScrolled
+    ? "h-8 sm:h-9 md:h-12 lg:h-14"
+    : "h-9 sm:h-10 md:h-14 lg:h-16 brightness-0 invert"
+}`}
           />
         </a>
 

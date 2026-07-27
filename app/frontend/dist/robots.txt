@@ -1,4 +1,5 @@
 User-agent: *
+
 Allow: /
 
-Sitemap: https://atoms.template.com/sitemap.xml
+Sitemap: https://functionbetter.fit/sitemap.xml
